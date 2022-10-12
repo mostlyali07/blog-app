@@ -1,3 +1,12 @@
 body{
     font-family: 'Josefin Sans', sans-serif;
 }
+
+.navbar-brand{
+    font-size: 30px;
+}
+/* .img-add{
+    background-image: url(/blog-png.png);
+    background-position: center center;
+    background-size: cover;
+} */
