@@ -9,9 +9,9 @@ btnMain.addEventListener("click", () => {
     let title = document.getElementById("title").value;
     console.log(title);
     document.getElementById("title").value = "";
-    let editor = document.getElementById("editor").value;
+    let editor = document.getElementById("editor").innerHTML;
     console.log(editor);
-    document.getElementById("editor").value = "";
+    document.getElementById("editor").innerHTML = "";
     let customFile = document.getElementById("customFile").value;
     console.log(customFile);
     document.getElementById("customFile").value = "";
