@@ -57,3 +57,63 @@
 </body>
 
 </html>
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+
+<script src="http://cdn.quilljs.com/1.2.0/quill.js"></script>
+<script src="http://cdn.quilljs.com/1.2.0/quill.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<link href="http://cdn.quilljs.com/1.2.0/quill.snow.css" rel="stylesheet">
+<link href="http://cdn.quilljs.com/1.2.0/quill.bubble.css" rel="stylesheet">
+
+
+    <title>Editor</title>
+
+</head>
+<body>
+<div id="toolbar"></div>
+<div id="editor"></div>
+<script>
+
+var toolbarOptions = [
+['bold', 'italic', 'underline', 'strike'],
+['blockquote', 'code-block'],
+[{'header': 1}, {'header': 2}],
+[{'list': 'ordered'}, {'list': 'bullet'}],
+[{'script': 'sub'}, {'script': 'super'}],
+[{'indent': '-1'}, {'indent': '+1'}],
+[{'direction': 'rtl'}],
+[{'size': ['small', false, 'large', 'huge']}],
+['link', 'image', 'video', 'formula'],
+[{'color': []}, {'background': []}],
+[{'font': []}],
+[{'align': []}]
+];
+var options = {
+  debug: 'info',
+  modules: {
+    toolbar: toolbarOptions
+  },
+  placeholder: 'Textttt',
+  readOnly: false,
+  theme: 'snow'
+};
+var editor = new Quill('#editor', options);
+    var delta = quill.getContents();
+function quillGetHTML(inputDelta) {
+    var tempCont = document.createElement("div");
+    (new Quill(tempCont)).setContents(inputDelta);
+    return tempCont.getElementsByClassName("ql-editor")[0].innerHTML;
+}
+function callMe(){
+$(document).ready(function(){$("#btn1").click(function(){$("p").append(quillGetHTML(delta));});});}
+</script>
+<p>HTML: </p>
+<button id="btn1" onClick="callMe()">Get HTML From Delta</button>
+</body>
+</html> -->
