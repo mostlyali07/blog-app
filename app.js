@@ -30,7 +30,7 @@ btnMain.addEventListener("click", () => {
     console.log(title);
     document.getElementById("title").value = "";
     let editor = document.getElementById("editor");
-    console.log(editor.textContent);
+    console.log(editor.textContent);  
     let customFile = document.getElementById("customFile").value;
     console.log(customFile);
     document.getElementById("customFile").value = "";
